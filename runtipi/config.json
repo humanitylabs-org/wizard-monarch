@@ -10,8 +10,8 @@
     "network"
   ],
   "description": "The Monarch connection for your Wizard. Sign in to Monarch once in Monarch's own window with Read access, and your apps get accounts, balances, categorized transactions, budget, cash flow and net worth. The sign-in stays inside this app.",
-  "tipi_version": 2,
-  "version": "0.1.1",
+  "tipi_version": 3,
+  "version": "0.1.2",
   "source": "https://github.com/oscarhenrycollins/wizard-monarch",
   "exposable": false,
   "supported_architectures": [
@@ -19,7 +19,7 @@
     "arm64"
   ],
   "created_at": 1792760000000,
-  "updated_at": 1792760000000,
+  "updated_at": 1794360361088,
   "dynamic_config": true,
   "min_tipi_version": "4.8.0",
   "uid": 1000,
