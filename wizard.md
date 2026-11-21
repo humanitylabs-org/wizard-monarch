@@ -4,7 +4,7 @@ id: wizard-monarch
 name: Monarch
 type: external
 category: system
-version: 0.1.2
+version: 0.1.3
 summary: Connect Monarch. Your apps get read-only accounts, balances and categorized transactions.
 tags: [finance]
 license: GPL-3.0-only

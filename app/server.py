@@ -31,7 +31,7 @@ from urllib.parse import parse_qs, urlencode, urlsplit
 ROOT = Path(__file__).resolve().parent.parent if '__file__' in globals() else Path(os.environ.get('APP_ROOT', '.')).resolve()
 DATA = Path(os.environ.get('DATA_DIR', ROOT / '.data'))
 APP_ID = 'wizard-monarch'
-VERSION = '0.1.2'
+VERSION = '0.1.3'
 PREFIX = '/' + APP_ID
 PORT = os.environ.get('PORT', '8806')
 BASE = os.environ.get('MONARCH_BASE', 'https://api.monarch.com').rstrip('/')
