@@ -10,7 +10,7 @@ Find **Monarch** in the [Wizard App Store](https://www.aiwizards.com/wizard-apps
 wam install wizard-monarch
 ```
 
-The catalog pins the checked Git commit. The runtime uses a digest-pinned Python base and packaged source; it needs no external dashboard, image build, or companion app.
+The catalog pins the checked Git commit. The runtime uses a digest-pinned Python base and runs from the pinned source files (`runtime.package: source`: the App Manager mounts them read-only on `/app`); it needs no external dashboard, image build, or companion app.
 
 ## Connect
 
@@ -30,6 +30,6 @@ Disconnect revokes access where supported and deletes tokens and the app's local
 
 ## Development
 
-Python standard library only. Run `python3 tools/test_contract.py` and `python3 tools/test_release.py` (synthetic provider only). With the Wizard builder on PATH, run `python3 tools/package.py`, `wam check . --proposal`, then `python3 tools/package.py --check` to validate the checked-in package. Runtime metadata is in `wizard.md`, API in `openapi.json`, and the agent guide in `skill/SKILL.md`.
+Python standard library only. Run `python3 tools/test_contract.py` and `python3 tools/test_release.py` (synthetic provider only). With the Wizard builder on PATH, run `wam check . --proposal`, then `python3 tools/package.py --check` to confirm the compose runs from source (there is no inline packaging step). Runtime metadata is in `wizard.md`, API in `openapi.json`, and the agent guide in `skill/SKILL.md`.
 
 GPL-3.0-only; see LICENSE and NOTICE.md. Publisher identity signing, if desired, happens only in Wizard's owner signing sheet; this repository does not claim a signed publisher identity.
